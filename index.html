@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Concursillo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game">
+
+    <!-- Comodines -->
+    <div id="lifelines">
+      <button id="fifty">50/50</button>
+      <button id="call">📞 Llamada</button>
+      <button id="roulette">🎡 Ruleta</button>
+      <button id="wizard">🧙 Mago</button>
+    </div>
+
+    <!-- Contenedor pregunta y respuestas -->
+    <div id="qa-container">
+      
+      <!-- Círculos de progreso -->
+      <div class="progress">
+        <div class="circle" id="q1">1</div>
+        <div class="circle" id="q2">2</div>
+        <div class="circle" id="q3">3</div>
+        <div class="circle" id="q4">4</div>
+        <div class="circle" id="q5">5</div>
+        <div class="circle" id="q6">6</div>
+        <div class="circle" id="q7">7</div>
+        <div class="circle" id="q8">8</div>
+        <div class="circle" id="q9">9</div>
+        <div class="circle" id="q10">10</div>
+        <div class="circle" id="q11">11</div>
+        <div class="circle" id="q12">12</div>
+        <div class="circle" id="q13">13</div>
+        <div class="circle" id="q14">14</div>
+        <div class="circle" id="q15">15</div>
+      </div>
+
+      <!-- Pregunta -->
+      <div class="question">
+        <p id="question-text"></p>
+      </div>
+
+      <!-- Respuestas 2x2 -->
+      <div class="answers">
+        <div class="answer">A. <span></span></div>
+        <div class="answer">B. <span></span></div>
+        <div class="answer">C. <span></span></div>
+        <div class="answer">D. <span></span></div>
+      </div>
+    </div>
+
+    <!-- Timer y resultado -->
+    <div id="call-timer" style="display: none;"></div>
+    <div id="result" class="hidden"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

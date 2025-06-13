@@ -1,0 +1,42 @@
+[
+  {
+    "question": "¿Cuál es el océano más grande del mundo?",
+    "answers": [
+      "Atlántico",
+      "Índico",
+      "Ártico",
+      "Pacífico"
+    ],
+    "correct": 3
+  },
+  {
+    "question": "¿Qué planeta es conocido como el planeta rojo?",
+    "answers": [
+      "Marte",
+      "Venus",
+      "Júpiter",
+      "Saturno"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "¿En qué país se encuentra la Torre Eiffel?",
+    "answers": [
+      "Italia",
+      "Francia",
+      "España",
+      "Alemania"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "¿Quién escribió 'Cien años de soledad'?",
+    "answers": [
+      "Pablo Neruda",
+      "Gabriel García Márquez",
+      "Mario Vargas Llosa",
+      "Isabel Allende"
+    ],
+    "correct": 1
+  }
+]

@@ -1,0 +1,169 @@
+body {
+  background-color: transparent;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Comodines arriba */
+#lifelines {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 0;
+  background-color: rgba(50, 0, 0, 0.6);
+}
+
+#lifelines button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: darkred;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#lifelines button.used {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Progreso arriba del área de preguntas */
+.progress {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: #555;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+
+.circle.active {
+  background-color: green;
+}
+
+/* Contenedor transparente para mantener forma */
+#qa-container {
+  background-color: transparent;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Pregunta con cuadro fijo */
+.question {
+  font-size: 24px;
+  margin-bottom: 20px;
+  min-height: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Respuestas 2x2 */
+.answers {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.answer {
+  background-color: #800000;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 1; /* SIEMPRE visibles */
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+/* Span de texto dentro de las respuestas */
+.answer span {
+  font-weight: bold;
+  margin-left: 8px;
+  visibility: hidden; /* Oculto hasta que se presione espacio */
+}
+.answer.visible span {
+  visibility: visible;
+}
+
+/* Mostrar texto cuando sea hora */
+.answer.show span {
+  visibility: visible;
+}
+
+.answer.selected {
+  background-color: #b23b3b;
+  border: 2px solid #f44336;
+  color: white;
+}
+
+.answer.correct {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.answer.incorrect {
+  background-color: #f44336;
+  color: white;
+}
+
+.answer.hidden {
+  visibility: hidden; /* Oculta pero mantiene espacio */
+}
+
+#result {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+#call-timer {
+  text-align: center;
+  color: yellow;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
